@@ -7,70 +7,110 @@
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+    <fieldset class="fset">
+        <legend class="Personal_Data">Personal Data</legend>
+        <br>
     <div class="container">
-    <form>
-            <div id="name">
+            <form>
+                <fieldset id="name">
+                    <legend class="your_name">Your Name</legend>
+                    <div >
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="FirstName">First Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="FirstName" name="FirstName" placeholder="ex amr">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="SecondName">Second Name:</label>
+                                </td>
+                                <td>
+                                    <input type="text" id="SecondName" name="SecondName" placeholder="ex mohamed">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <br>
+                <br>
                 <table>
-                    <h5>Your Name</h5>
+    
                     <tr>
-                        <td>
-                            <label for="FirstName">First Name:</label>
+                        <td>                    
+                            <label for="Phone"> Your Phone:</label>
                         </td>
-                        <td>
-                            <input type="text" id="FirstName" name="FirstName" placeholder="ex amr">
+                        <td>    
+                            <input type="tel" id="Phone" name="Phone" placeholder="ex 01000000000">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="SecondName">Second Name:</label>
+                            <label for="Email">Email: </label>
+                        </td>
+                        <td>                    
+                            <input type="email" id="Email" name="Email" placeholder="ex amr@gmail.com">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for ="Password">Password: </label>
                         </td>
                         <td>
-                            <input type="text" id="SecondName" name="SecondName" placeholder="ex mohamed">
+                            <input type="password" id="Password" name="Password" placeholder="ex 123456">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="re-password">Re-Password:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="re-password" name="re-password" placeholder="ex 123456">
                         </td>
                     </tr>
                 </table>
-            </div>
-            <br>
-            <br>
-            <table>
-
-                <tr>
-                    <td>                    
-                        <label for="Phone"> Your Phone:</label>
-                    </td>
-                    <td>    
-                        <input type="tel" id="Phone" name="Phone" placeholder="ex 01000000000">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="Email">Email: </label>
-                    </td>
-                    <td>                    
-                        <input type="email" id="Email" name="Email" placeholder="ex amr@gmail.com">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for ="Password">Password: </label>
-                    </td>
-                    <td>
-                        <input type="password" id="Password" name="Password" placeholder="ex 123456">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="re-password">Re-Password:</label>
-                    </td>
-                    <td>
-                        <input type="password" id="re-password" name="re-password" placeholder="ex 123456">
-                    </td>
-                </tr>
-            </table>
-            <br>
-            <br>
-            <radio>
-        </form>
-    </div>
+                <br>
+                <br>
+                <div class="radio-group">
+                    <input type="radio" name="Male">
+                    <label for="Male">Male</label> <br>
+                    <input type="radio" name="Female">
+                    <label for="Female">Female</label>
+                </div>
+                <br>
+                <br>
+                <div class="checkbox-group">
+                    <input type="checkbox" name="Student">
+                    <label for="Student">Student</label>
+                    <br>
+                    <input type="checkbox" name="Graduated">
+                    <label for="Graduated">Graduated</label>
+                </div>
+                <br>
+                <br>
+         
+                <select id="university" name="university">
+                    <optgroup label="University">
+                        <option value="auc">AUC</option>
+                        <option value="cairo_university">Cairo University</option>
+                        <option value="benha_university">Benha University</option>
+                    </optgroup>
+                    <optgroup label="Faculty">
+                        <option value="engineering">Engineering</option>
+                        <option value="computer_science">Computer Science</option>
+                        <option value="business">Business</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <br>
+                <input type="image" src="./Assets/Images/submit.png" alt="Submit">
+    
+            </form>
+        </div>
+    </fieldset>
 </body>
 </html>

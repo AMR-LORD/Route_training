@@ -1,19 +1,25 @@
 html {
-    background-color: white; /* خلي الخلفية الكلية بيضاء */
-}
-
-body {
-    background-color: brown; /* لون الخلفية الأساسي */
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    border: 5px solid white;
-    width: 95%; /* خلي عرض البودي أقل علشان يظهر الأبيض على الجوانب */
-    margin: auto; /* علشان يتمركز في المنتصف */
+    background-color: white; 
 }
 
 #name {
-    width: 80%;
+    width: 97%;
     margin: auto;
     background: gold;
     padding: 20px;
+}
+.your_name {
+    background-color: rgb(22, 122, 236);
+    line-height: 80px; /* لضبط التوسيط عموديًا */
+}
+.Personal_Data{
+    background-color: darkblue;
+}
+.fset{
+    background-color: brown; 
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 2px solid rgb(39, 145, 163);
+    margin: auto; 
+    min-height: 100vh; /* يجعل الصفحة تأخذ طول الشاشة بالكامل */
 }
