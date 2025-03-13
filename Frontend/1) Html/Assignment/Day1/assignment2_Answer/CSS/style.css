@@ -1,0 +1,19 @@
+html {
+    background-color: white; /* خلي الخلفية الكلية بيضاء */
+}
+
+body {
+    background-color: brown; /* لون الخلفية الأساسي */
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 5px solid white;
+    width: 95%; /* خلي عرض البودي أقل علشان يظهر الأبيض على الجوانب */
+    margin: auto; /* علشان يتمركز في المنتصف */
+}
+
+#name {
+    width: 80%;
+    margin: auto;
+    background: gold;
+    padding: 20px;
+}
