@@ -1,0 +1,1 @@
+Display three images side by side using only `display: inline`. Each image should be accompanied by a title and a description below it. The images should take up the full available width while maintaining proper spacing and alignment.
