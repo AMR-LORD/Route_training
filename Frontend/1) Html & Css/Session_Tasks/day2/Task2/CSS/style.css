@@ -1,15 +1,25 @@
 .cards {
-    display: flex; 
-    justify-content: space-between; 
-    gap: 5px; 
-    padding: 5px;
+    width: 100%; /* يضمن أن الحاوية تأخذ كل العرض */
+    overflow: hidden; /* يمنع أي مشاكل بسبب الـ float */
+    text-align: center; /* يضمن التوسيط العام */
 }
 
 .card {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    text-align: center;
-    border: 2px solid #000;
-    padding: 10px;
+    width: 30%; /* كل بطاقة تأخذ تقريبًا ثلث الشاشة */
+    float: left; /* يجعل العناصر تصطف بجانب بعضها */
+    margin: 1.5%; /* يضيف مسافة صغيرة بين البطاقات */
+    text-align: center; /* يضمن أن النص تحت الصورة يكون في المنتصف */
+    box-sizing: border-box; /* يمنع أي تأثير للـ padding على الحجم */
+}
+
+.card img {
+    width: 100%; /* يجعل الصورة تأخذ كامل عرض البطاقة */
+    border: 5px solid #000;
+}
+
+/* لحل مشاكل الـ float ومنع انهيار الحاوية */
+.cards::after {
+    content: "";
+    display: block;
+    clear: both;
 }
