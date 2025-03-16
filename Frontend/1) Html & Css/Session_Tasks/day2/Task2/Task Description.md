@@ -1,0 +1,1 @@
+Display three images side by side using only `float`. Each image should be accompanied by a title and a description below it. The images should be properly aligned and take up the full available width while maintaining consistent spacing. Ensure that the layout does not break and that the parent container properly wraps the floated elements.
