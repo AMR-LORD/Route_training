@@ -20,8 +20,7 @@
 
 }
 .container {
-    width: 1240px;;
-    max-width: 1200px;
+    width: 1300px;
     margin: 0 auto;
 }
 
@@ -178,7 +177,7 @@
     float: right;
     padding: 60px;
     text-align: left;
-    width: 52%;
+    width: 53%;
 }
 .about .container .content h2 {
     font-size: 32px;
@@ -195,12 +194,31 @@
 }
 .content .icon-list {
     margin-top: 20px;
-    font-family: "Alegreya Sans";
     font-size: 17px;
+    font-family: "Alegreya Sans";
+    color: #686868;
+    line-height: 30px;
 
 }
 .content .icon-list li {
-    padding: 15px;
+    padding: 20px 55px;
+}
+.icon-list li {
+    list-style: none; /* إزالة البولت الافتراضي */
+    background-image: url("../Assets/Images/heart.png");
+    background-repeat: no-repeat;
+    background-size: 45px 45px; /* تحكم في حجم الأيقونة */
+    background-position: 0px; /* ضبط موقع الأيقونة */
+    padding-left: 100px; /* زيادة المسافة بين الأيقونة والنص */
+}
+.icon-list .fa-leaf {
+    background-image: url("../Assets/Images/leaf.png");
+}
+.icon-list .fa-users {
+    background-image: url("../Assets/Images/people.png");
+}
+.icon-list .fa-true {
+    background-image: url("../Assets/Images/true.png");
 }
 
 /* الفوتر */
