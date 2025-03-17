@@ -41,11 +41,11 @@
 
 }
 
-body:has(.content) .navbar {
+/* body:has(.content) .navbar {
     background: rgba(202, 10, 10, 0.8);
     backdrop-filter: blur(10px);
     padding: 10px 0;
-}
+} */
 /* اللوجو */
 .logo {
     float: left;
@@ -119,22 +119,24 @@ body:has(.content) .navbar {
     margin: 10px 0px 20px ;
     font-family: "Alegreya Sans";
     font-weight: 400;
+    line-height: 40px;
 
 }
 
-.btn {
+.b1,.b2 {
     display: inline-block;
     background: #8E7754;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 26px;
     text-decoration: none;
     font-size: 18px;
-    font-weight: bold;
     margin: 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: background 0.3s ease-in-out;
+    border-radius: 3px;
+    font-family: "Alegreya Sans";
 }
-.btn.b2{
+.b2{
     background: transparent;
     border: 2px solid white;
 }
@@ -164,6 +166,43 @@ body:has(.content) .navbar {
     border-radius: 5px;
 }
 
+.about .container .img {
+    float: left;
+    width: 47%;
+}
+.about .container .img img {
+    width: 100%;
+    border-radius: 5px;
+}
+.about .container .content{
+    float: right;
+    padding: 60px;
+    text-align: left;
+    width: 52%;
+}
+.about .container .content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+.about .container .content p {
+    font-size: 17px;
+    font-family: "Alegreya Sans";
+    color: #686868;
+    line-height: 30px;
+
+}
+.content .icon-list {
+    margin-top: 20px;
+    font-family: "Alegreya Sans";
+    font-size: 17px;
+
+}
+.content .icon-list li {
+    padding: 15px;
+}
+
 /* الفوتر */
 footer {
     background: #222;
@@ -171,4 +210,10 @@ footer {
     text-align: center;
     padding: 20px 0;
     margin-top: 50px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
