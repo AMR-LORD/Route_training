@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Alegreya";
 }
 
 /* الهيدر */
@@ -11,30 +12,40 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
+    height: 800px; /* اجعل الهيدر يغطي الشاشة بالكامل */
+    position: relative; /* مهم عشان النستد عناصر جوهها تبقى في مكانها الصح */    
     text-align: center;
     padding-top: 80px; /* يمنع تداخل النافبار مع العناصر */
-}
-.container{
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
+    overflow: hidden; /* عشان لو فيه عناصر طايرة تتزبط */
 
 }
+.container {
+    width: 1240px;;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* النافبار */
 .navbar {
     position: fixed;
+    box-sizing: border-box;
     top: 0;
-    left: 0;
-    width: 100%;
+    width: 90%;
     background: transparent;
     padding: 15px 0;
     z-index: 1000;
     overflow: hidden; /* لمنع المشاكل مع الفلووت */
+    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+
+
 }
 
+body:has(.content) .navbar {
+    background: rgba(202, 10, 10, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 10px 0;
+}
 /* اللوجو */
 .logo {
     float: left;
@@ -53,20 +64,18 @@
 
 .links ul {
     list-style: none;
-    padding: 20px;
     margin: 0;
 }
 
 .links ul li {
     float: left;
-    margin-left: 20px;
+    padding: 15px;
 }
 
 .links ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
@@ -84,25 +93,33 @@
 /* قسم البطلة */
 .hero {
     clear: both;
-    margin-top: 100px;
+    margin-top: 180px;
+    width: 700px;
     color: white    ;
 }
 
 .hero h1 {
-    font-size: 70px;
+    font-size: 76px;
     color: white;
-    font-weight: bold;
+    font-weight: 400;
     margin-bottom: 20px;
+    font-family: "Alegreya";
 }
 .hero p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-.hero description {
-    font-size: 40px;
+    font-size: 24px;
     /* bold */
-    font-weight: bold;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin: 10px 0px 20px ;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+}
+.description {
+    /* bold */
+    margin-top: 10px;
+    margin: 10px 0px 20px ;
+    font-family: "Alegreya Sans";
+    font-weight: 400;
+
 }
 
 .btn {

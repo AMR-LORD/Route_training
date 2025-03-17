@@ -59,3 +59,112 @@ The following CSS code is used to style a set of cards displayed in a row. Each 
 - `content: "";` → Inserts an empty element after the last floating element.
 - `display: block;` → Ensures that the inserted element behaves like a block to affect the layout.
 - `clear: both;` → Prevents the container from collapsing by forcing it to wrap around its floating children.
+
+
+السبب الرئيسي أن الـ `position: sticky` مش بتشتغل في النافبار هو وجود الـ **`.navbar` داخل عنصر `.container`** اللي بداخله الـ `position: relative`! علشان الـ sticky يشتغل صح، لازم تتحقق الآتي:
+
+### الخطوات المطلوبة لإصلاح المشكلة:
+
+1. **انقل الـ `.navbar` خارج الـ `.container`:**  
+    الـ `.container` عنده `position: relative` فبيغير سياق التصميم، مما بيخلي الـ sticky متعرفش تتثبت بشكل صحيح.
+    
+    html
+    
+    Copy
+    
+    <div class="header">
+        <!-- النافبار خارج الـ container -->
+        <nav class="navbar">
+            <!-- محتوى النافبار -->
+        </nav>
+        
+        <div class="container">
+            <!-- محتوى الهيدر -->
+        </div>
+    </div>
+    
+    Run HTML
+    
+2. **تأكد أن الـ `.header` مش محصور بـ `overflow`:**  
+    لو عندك `overflow: hidden` أو `auto` في أي عنصر أب، هيمنع الـ sticky من الشغل.
+    
+3. **أضف `top: 0` لـ `.navbar`:**  
+    حتى لو موجودة، تأكد من كتابتها بشكل صحيح.
+    
+    css
+    
+    Copy
+    
+    .navbar {
+        position: sticky;
+        top: 0; /* ضروري */
+        /* باقي الخصائص */
+    }
+    
+4. **تأكد من عدم وجود `position: relative` على العنصر الأب المباشر:**  
+    في الكود الحالي، الـ `.header` عنده `position: relative`، لكن ده مشكلة فقط إذا كان فيه `overflow` مضبوط.
+    
+
+---
+
+### الكود المصحح:
+
+#### HTML:
+
+html
+
+Copy
+
+<div class="header">
+    <!-- النافبار خارج الـ container -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./Assets/Images/bakery-light-1.png" alt="Engage Bakery">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Our Offer</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- محتوى الهيدر -->
+        <div class="hero">
+            <!-- ... -->
+        </div>
+    </div>
+</div>
+
+Run HTML
+
+#### CSS:
+
+css
+
+Copy
+
+.header {
+    position: relative; /* ممكن تمسحها إذا مفيش داعي */
+    /* باقي الخصائص */
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* باقي الخصائص */
+}
+
+---
+
+### ملاحظات إضافية:
+
+- لو لسة النافبار مش بتثبت، جرب تضيف `height: 100vh` للـ `.header` بدل `min-height`.
+    
+- تأكد أن مفيش عناصر تانية بتغطي على النافبار (استخدم أدوات المطورين في المتصفح للتأكد).
