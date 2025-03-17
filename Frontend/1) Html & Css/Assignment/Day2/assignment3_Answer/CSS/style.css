@@ -164,6 +164,7 @@
     background: #eee;
     border-radius: 5px;
 }
+/* about */
 
 .about .container .img {
     float: left;
@@ -192,6 +193,7 @@
     line-height: 30px;
 
 }
+
 .content .icon-list {
     margin-top: 20px;
     font-size: 17px;
@@ -234,4 +236,39 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+/* location */
+.location .container .content p{
+    font-size: 17px;
+    font-family: "Alegreya Sans";
+    color: #686868;
+    line-height: 30px;
+}
+.location .container .content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+.location .container .content .img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.location .container .img {
+    float: right;
+    width: 50%;
+}
+.location .container .img img {
+    width: 100%;
+    border-radius: 5px;
+}
+.location .container .content{
+    float: left;
+    padding: 60px;
+    text-align: left;
+    width: 50%;
+}
+.location{
+    background: #f8f8f8;
 }
