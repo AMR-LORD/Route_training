@@ -213,13 +213,13 @@
     background-position: 0px; /* ضبط موقع الأيقونة */
     padding-left: 100px; /* زيادة المسافة بين الأيقونة والنص */
 }
-.icon-list .fa-leaf {
+.icon-list .c-leaf {
     background-image: url("../Assets/Images/Icons/leaf.png");
 }
-.icon-list .fa-users {
+.icon-list .c-users {
     background-image: url("../Assets/Images/Icons/people.png");
 }
-.icon-list .fa-true {
+.icon-list .c-true {
     background-image: url("../Assets/Images/Icons/check.png");
 }
 
@@ -323,19 +323,17 @@ footer {
 .contact{
     background: #f8f8f8;
 }
-.contact .map{
-    background-image: url("../Assets/Images/Icons/location.png");
-
+.contact .container .content p:nth-child(2){
+    padding-bottom: 30px;
 }
-.contact .Phone{
-    background-image: url("../Assets/Images/Icons/phone-gray.png");
-
+.contact .container .content .cinfo{
+    padding-top: 40px;
 }
-.contact .headphone{
-    background-image: url("../Assets/Images/Icons/");
-}
-.contact .email{
-    background-image: url("../Assets/Images/Icons/email.png");
+.contact .container .content span{
+    font-size: 17px;
+    font-family: "Alegreya";
+    color: #686868;
+    line-height: 30px;
 }
 /* footer */
 footer{
