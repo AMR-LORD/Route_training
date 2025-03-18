@@ -340,8 +340,9 @@ footer {
 /* footer */
 footer{
     background-color: #403D38;
+    bottom: 0vh;
 }
-footer p{
+footer .container p{
     font-size: 17px;
     font-family: "Alegreya Sans";
     color: #686868;
@@ -349,14 +350,14 @@ footer p{
     text-align: left;
 
 }
-footer h4{
+footer .container h4{
     font-size: 18px;
     margin-bottom: 20px;
     font-family: "Alegreya";
     font-weight: 400;
 }
 
-footer .row span{
-    width: 25%;
+footer .container .row span{
+    width: 23%;
     float: left;
 }
