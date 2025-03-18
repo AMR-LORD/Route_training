@@ -17,7 +17,7 @@
     text-align: center;
     padding-top: 80px; /* يمنع تداخل النافبار مع العناصر */
     overflow: hidden; /* عشان لو فيه عناصر طايرة تتزبط */
-    margin-top: -86px; /* لتجنب الهواء الزائد */
+    margin-top: -106px; /* لتجنب الهواء الزائد */
 }
 .container {
     width: 1300px;
@@ -71,12 +71,13 @@
     margin: 0;
 }
 
-.links ul li {
+.links ul li:not(.dropdown-menu){
     float: left;
     padding: 15px;
+    margin-bottom: 20px;
 }
 
-.links ul li a {
+.links ul li a:not(.dropdown-menu){
     text-decoration: none;
     color: white;
     font-size: 18px;
@@ -86,7 +87,43 @@
 .links ul li a:hover {
     color: #ffcc00;
 }
+.links .dropdown-menu li:hover{
+    background-color: #AE9768;
+    color: white;
+}
+.links .dropdown-menu li:hover a{
+    color:white;
+}
+.navbar .links .dropdown-menu{
+    display: none;
 
+}
+.navbar .links .dropdown:hover .dropdown-menu{
+    display: block;
+    position: fixed;
+    z-index: 9000;
+    right: 20px;
+    top: 35px;
+    background: #433E37;
+    height: auto;
+    list-style: none;
+    padding: 0;
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: left;
+    width: 12%;
+}
+
+.navbar .links .dropdown:hover .dropdown-menu li{
+    display: block; /* يخلي العناصر تحت بعض */
+    width: 100%;
+    padding: 5px 15px;
+}
+.navbar .links .dropdown:hover .dropdown-menu li a{
+    text-decoration: none;
+    font-size: 15px;
+    display: block; /* يخلي اللينك يغطي كل المساحة */
+}
 /* تنظيف الفلووت */
 .clearfix::after {
     content: "";
