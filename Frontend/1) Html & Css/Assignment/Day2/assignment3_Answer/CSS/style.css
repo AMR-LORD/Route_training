@@ -323,3 +323,17 @@ footer {
 .contact{
     background: #f8f8f8;
 }
+.contact .map{
+    background-image: url("../Assets/Images/map.png");
+
+}
+.contact .Phone{
+    background-image: url("../Assets/Images/phone.png");
+
+}
+.contact .headphone{
+    background-image: url("../Assets/Images/headphone.png");
+}
+.contact .email{
+    background-image: url("../Assets/Images/email.png");
+}
