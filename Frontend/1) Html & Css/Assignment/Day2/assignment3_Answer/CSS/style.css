@@ -207,17 +207,28 @@
     border-radius: 5px;
 }
 /* about */
+.about .container {
+    text-align: left; /* يضمن إن العناصر تبقى جنب بعض */
+    font-size: 0; /* يمنع الفراغات بين العناصر */
+}
+
+.about .container .img,
+.about .container .content {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px; /* يرجع الخط لحجمه الطبيعي */
+}
 
 .about .container .img {
-    float: left;
     width: 47%;
 }
+
 .about .container .img img {
     width: 100%;
     border-radius: 5px;
 }
-.about .container .content{
-    float: right;
+
+.about .container .content {
     padding: 60px;
     text-align: left;
     width: 53%;
@@ -280,6 +291,30 @@ footer {
     clear: both;
 }
 /* location */
+.location .container {
+    text-align: left; /* يضمن ترتيب العناصر بجانب بعض */
+    font-size: 0; /* يمنع الفراغات بين العناصر */
+}
+
+.location .container .content,
+.location .container .img {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px; /* يرجع الخط لحجمه الطبيعي */
+    width: 50%;
+}
+
+.location .container .content {
+    padding: 60px;
+    text-align: left;
+}
+
+.location .container .img img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* // */
 .location .container .content p{
     font-size: 17px;
     font-family: "Alegreya Sans";
@@ -292,25 +327,7 @@ footer {
     font-family: "Alegreya";
     font-weight: 400;
 }
-.location .container .content .img img {
-    width: 100%;
-    border-radius: 5px;
-}
 
-.location .container .img {
-    float: right;
-    width: 50%;
-}
-.location .container .img img {
-    width: 100%;
-    border-radius: 5px;
-}
-.location .container .content{
-    float: left;
-    padding: 60px;
-    text-align: left;
-    width: 50%;
-}
 .location{
     background: #f8f8f8;
 }
@@ -321,19 +338,31 @@ footer {
     font-family: "Alegreya";
     font-weight: 400;
 }
+.baking .container .types h4 {
+    font-size: 22px;
+    margin: 20px 0px;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
 .baking .container .content p {
     font-size: 17px;
     font-family: "Alegreya Sans";
     color: #686868;
     line-height: 30px;
-
+}
+.baking .container .types p{
+    font-size: 17px;
+    font-family: "Alegreya Sans";
+    color: #686868;
+    line-height: 30px;
 }
 .baking .container .content{
     padding: 60px;
     text-align: center;
 }
 .baking .container .types span{
-    float: left;
+    display: inline-block;
+    text-align: center;
     width: 33%;
     padding: 20px;
 }
