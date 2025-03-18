@@ -17,7 +17,7 @@
     text-align: center;
     padding-top: 80px; /* يمنع تداخل النافبار مع العناصر */
     overflow: hidden; /* عشان لو فيه عناصر طايرة تتزبط */
-
+    margin-top: -86px; /* لتجنب الهواء الزائد */
 }
 .container {
     width: 1300px;
@@ -27,25 +27,23 @@
 
 /* النافبار */
 .navbar {
-    position: fixed;
+    position: sticky;
     box-sizing: border-box;
-    top: 0;
-    width: 90%;
+    top: 0px;
     background: transparent;
     padding: 15px 0;
     z-index: 1000;
     overflow: hidden; /* لمنع المشاكل مع الفلووت */
-    transition: background 0.3s ease-in-out, padding 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 
 
 }
-
-/* body:has(.content) .navbar {
-    background: rgba(202, 10, 10, 0.8);
+.navbar.scrolled {
+    background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(10px);
     padding: 10px 0;
-} */
-/* اللوجو */
+}
+
 .logo {
     float: left;
     margin-left: 20px;
