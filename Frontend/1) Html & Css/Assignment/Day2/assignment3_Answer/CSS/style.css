@@ -35,15 +35,22 @@
     z-index: 1000;
     overflow: hidden; /* لمنع المشاكل مع الفلووت */
     transition: all 0.3s ease-in-out;
-
-
 }
 .navbar.scrolled {
-    background: rgba(0, 0, 0, 0.8);
+    background-color: white;
     backdrop-filter: blur(10px);
+    color: black;
     padding: 10px 0;
 }
-
+.navbar.scrolled a {
+    color: black !important;
+}
+.navbar.scrolled .logo img{
+    content: url("../Assets/Images/bakery-color.png");
+}
+.navbar.scrolled a:hover {
+    color: #ffcc00 !important;
+}
 .logo {
     float: left;
     margin-left: 20px;
