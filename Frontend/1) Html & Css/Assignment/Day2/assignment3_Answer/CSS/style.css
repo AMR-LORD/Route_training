@@ -207,20 +207,20 @@
 }
 .icon-list li {
     list-style: none; /* إزالة البولت الافتراضي */
-    background-image: url("../Assets/Images/heart.png");
+    background-image: url("../Assets/Images/Icons/heart.png");
     background-repeat: no-repeat;
     background-size: 45px 45px; /* تحكم في حجم الأيقونة */
     background-position: 0px; /* ضبط موقع الأيقونة */
     padding-left: 100px; /* زيادة المسافة بين الأيقونة والنص */
 }
 .icon-list .fa-leaf {
-    background-image: url("../Assets/Images/leaf.png");
+    background-image: url("../Assets/Images/Icons/leaf.png");
 }
 .icon-list .fa-users {
-    background-image: url("../Assets/Images/people.png");
+    background-image: url("../Assets/Images/Icons/people.png");
 }
 .icon-list .fa-true {
-    background-image: url("../Assets/Images/true.png");
+    background-image: url("../Assets/Images/Icons/check.png");
 }
 
 /* الفوتر */
@@ -324,23 +324,25 @@ footer {
     background: #f8f8f8;
 }
 .contact .map{
-    background-image: url("../Assets/Images/map.png");
+    background-image: url("../Assets/Images/Icons/location.png");
 
 }
 .contact .Phone{
-    background-image: url("../Assets/Images/phone.png");
+    background-image: url("../Assets/Images/Icons/phone-gray.png");
 
 }
 .contact .headphone{
-    background-image: url("../Assets/Images/headphone.png");
+    background-image: url("../Assets/Images/Icons/");
 }
 .contact .email{
-    background-image: url("../Assets/Images/email.png");
+    background-image: url("../Assets/Images/Icons/email.png");
 }
 /* footer */
 footer{
-    background-color: #403D38;
+    background-color: #353330;
+    position: relative;
     bottom: 0vh;
+    left: 0px;
 }
 footer .container p{
     font-size: 17px;
@@ -360,4 +362,37 @@ footer .container h4{
 footer .container .row span{
     width: 23%;
     float: left;
+    text-align: left;
+    padding: 20px;
 }
+footer .container .row .col4 div span{
+    width: 100%;
+    text-align: left;
+    
+}
+footer .container{
+    min-height: 100vh;
+    min-height: 100vh;
+}
+footer .row{
+    overflow: hidden;
+    padding: 20px;
+    background-color: #403D38;
+    margin-bottom: 30px;
+}
+footer .footer-bottom{
+    border-radius: 5px;
+    float: center;
+    text-align: left;
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+}
+footer .footer-bottom p{
+    font-size: 17px;
+    font-family: "Alegreya Sans";
+    color: #686868;
+    line-height: 30px;
+    padding: 20px 60px ;
+}
+

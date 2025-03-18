@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 
 
 </head>
@@ -107,17 +109,28 @@
                 <h2>Contact Information</h2>
                 <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
                 <p>Our contact details:</p>
-                <ul class="icon-list">
-                    <li class="map">Manchester St 123-78B, Random 713, UK</li>
-                    <li class="Phone">+46 123 456 789</li>
-                    <li class="headphone">+37 431 456 789</li>
-                    <li class="email">hello@sitename.com</li>
-                </ul>
+                <div  class="map">
+                    <i class="fa-solid fa-map"></i>
+                    <span>Manchester St 123-78B, Random 713, UK</span>
+                </div>
+                <div class="Phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+46 123 456 789</span>
+                </div>
+                <div class="headphone">
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <span>+37 431 456 789</span>
+                </div>
+                <div class="email">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>hello@sitename.com</span>
+                </div>
             </span>
             <span class="maps">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d81240.1540741299!2d-73.98079792739142!3d40.742457929155115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25856e81cdc7d%3A0xcb6b70d1bb597301!2sMicrosoft!5e1!3m2!1sar!2seg!4v1742256936912!5m2!1sar!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </span>
         </div>
+    </section>
     <footer>
         <div class="container clearfix">
             <div class="row">
@@ -149,22 +162,24 @@
                 </span>
                 <span class="col4">
                     <h4>Contact Details</h4>
-                    <div class="map">
+                    <div class="fmap">
                         <span>Manchester Road 123-78B, Silictown 7854MD, Great Country</span>
                     </div>
-                    <div class="phone">
+                    <div class="fphone">
                         <span>+46 123 456 789</span>
                     </div>
-                    <div class="email">
+                    <div class="femail">
                         <span>hello@sitename.com</span>
                     </div>
-                    <div class="site">
+                    <div class="fsite">
                         <span>http://www.sitename.com</span>
                     </div>
                 </span>
             </div>
-            <img src="./Assets/Images/bakery-light-1.png" alt="Engage Bakery">
-            <p>&copy; 2025 Bakery. All rights reserved.</p>
+            <div class="footer-bottom">
+                <img src="./Assets/Images/bakery-light-1.png" alt="Engage Bakery">
+                <p>&copy; 2025 Bakery. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>
