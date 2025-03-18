@@ -468,10 +468,32 @@ footer .footer-bottom .icons{
 }
 footer .footer-bottom .icons i{
     padding: 10px;
-    border: 1px solid #484540;
+    border: 1px solid transparent;
     border-radius: 50%;
     width: 40px;
     background-color: #484540;
     margin-left: 7px;
     color: #969696;
+    transition: background 0.2s ease-in-out,color 0.2s ease-in-out;
+
+}
+.footer-bottom .icons .fa-facebook-f:hover{
+    background-color: RGB(59, 89, 152);
+    color: white;
+    cursor: pointer;
+}
+.footer-bottom .icons .fa-google-plus-g:hover{
+    background-color: #DD4B39;
+    color: white;
+    cursor: pointer;
+}
+.footer-bottom .icons .fa-linkedin:hover{
+    background-color: #007BB5;
+    color: white;
+    cursor: pointer;
+}
+.footer-bottom .icons .fa-twitter:hover{
+    background-color: #00ACED;
+    color: white;
+    cursor: pointer;
 }
