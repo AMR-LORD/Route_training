@@ -345,7 +345,7 @@ footer{
 footer .container p{
     font-size: 17px;
     font-family: "Alegreya Sans";
-    color: #686868;
+    color: #969696;
     line-height: 30px;
     text-align: left;
 
@@ -358,10 +358,10 @@ footer .container h4{
 }
 
 footer .container .row span{
-    width: 23%;
+    width: 25%;
     float: left;
     text-align: left;
-    padding: 20px;
+    padding: 15px;
 }
 footer .container .row .col4 div span{
     width: 100%;
@@ -386,11 +386,72 @@ footer .footer-bottom{
     margin: 0 auto;
     padding: 20px;
 }
+
+footer ul{
+    font-size: 17px;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #969696;
+    line-height: 30px;
+}
+footer .row .col4 div{
+    font-size: 17px;
+    font-family: "Alegreya Sans", sans-serif;
+    color: #686868;
+    line-height: 30px;
+}
 footer .footer-bottom p{
     font-size: 17px;
     font-family: "Alegreya Sans";
     color: #686868;
     line-height: 30px;
     padding: 20px 60px ;
+}
+footer .container .row .col2 ul li{
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    list-style: none; /* إزالة البولت الافتراضي */
+    background-image: url("../Assets/Images/Icons/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px; /* تحكم في حجم الأيقونة */
+    background-position: 0px; /* ضبط موقع الأيقونة */
+    padding-left: 20px; /* زيادة المسافة بين الأيقونة والنص */
+}
+footer .container .row .col3 ul li{
+    list-style: none;
+    padding: 10px 0px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+    list-style: none; /* إزالة البولت الافتراضي */
+    background-image: url("../Assets/Images/Icons/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px; /* تحكم في حجم الأيقونة */
+    background-position: 0px; /* ضبط موقع الأيقونة */
+    padding-left: 20px; /* زيادة المسافة بين الأيقونة والنص */
+}
+footer .col4 div {
+    position: relative;
+    display: inline-block;
+    margin-top: -10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+footer .col4 div i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    margin-left:-10px;
+    color: #969696;
+
+}
+
+footer .col4 div span {
+    padding-left: 24px; /* يترك مساحة للأيقونة */
+    display: inline-block;
+    color: #969696;
+
 }
 
