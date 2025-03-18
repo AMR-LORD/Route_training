@@ -458,3 +458,20 @@ footer .col4 div span {
 footer .container .row .col1 p {
     padding-top: 20px;
 }
+
+
+footer .footer-bottom .icons{
+    font-size: 20px;
+    text-align: center;
+    color: #686868;
+    
+}
+footer .footer-bottom .icons i{
+    padding: 10px;
+    border: 1px solid #484540;
+    border-radius: 50%;
+    width: 40px;
+    background-color: #484540;
+    margin-left: 7px;
+    color: #969696;
+}
