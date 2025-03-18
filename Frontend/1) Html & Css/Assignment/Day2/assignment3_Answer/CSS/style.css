@@ -146,9 +146,9 @@
 }
 
 /* أقسام إضافية */
-.about, .location, .baking {
+.about, .location, .baking , .contact{
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
 }
 
 .items {
@@ -270,5 +270,56 @@ footer {
     width: 50%;
 }
 .location{
+    background: #f8f8f8;
+}
+/* // */
+.baking .container .content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+.baking .container .content p {
+    font-size: 17px;
+    font-family: "Alegreya Sans";
+    color: #686868;
+    line-height: 30px;
+
+}
+.baking .container .content{
+    padding: 60px;
+    text-align: center;
+}
+.baking .container .types span{
+    float: left;
+    width: 33%;
+    padding: 20px;
+}
+.baking .container .types span img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* contact */
+.contact .container .content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: "Alegreya";
+    font-weight: 400;
+}
+.contact .container .content p {
+    font-size: 17px;
+    font-family: "Alegreya Sans";
+    color: #686868;
+    line-height: 30px;
+
+}
+.contact .container .content{
+    padding: 60px;
+    text-align: left;
+    float: left;
+    width: 50%;
+}
+.contact{
     background: #f8f8f8;
 }
