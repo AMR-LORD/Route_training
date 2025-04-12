@@ -1,0 +1,27 @@
+
+img{
+    position: relative;
+    transform:rotateY(180deg);
+    left: 0;
+    animation: move 6s infinite;
+    height: 300px;
+}
+@keyframes move{
+    0%{
+        transform:rotateY(180deg);
+        left: 0;
+    }
+    50%{
+        transform:rotateY(180deg);
+        left:1200px;
+    }
+    51%{
+        transform:rotateY(0);
+        left:1200px;
+    }
+    100%{
+        left:0;
+        transform:rotateY(0);
+    }
+
+}
